@@ -71,11 +71,9 @@ brew install tesseract
 
 # 📈 Example Output
 **Input Image:** Front label of a food packet
-**Extracted Text:**
-
+**Extracted Text:** 
 ```"sugar, palm oil, maltodextrin"```
-**Matched Results:**
-
+**Matched Results:** 
 |Ingredient |	Status|  
 |-----------|-------|
 |Sugar|	🚫 High in calories|
