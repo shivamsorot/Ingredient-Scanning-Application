@@ -40,7 +40,7 @@ pip install scikit-learn
 ```
 # 🧠 Install Tesseract OCR Engine
 **For Windows:**
-Download from: [UB Mannheim Tesseract Builds]
+Download from: [UB Mannheim Tesseract Builds](https://github.com/UB-Mannheim/tesseract/wiki)
 
 Install to default path: C:\Program Files\Tesseract-OCR\tesseract.exe
 
