@@ -31,7 +31,7 @@ This application supports offline functionality and is customizable for various 
 
 # 🧰 Installation
 Install the following Python libraries:  
-```pip install opencv-python  
+``` pip install opencv-python  
 pip install pytesseract  
 pip install ultralytics  
 pip install pillow  
@@ -45,7 +45,7 @@ pip install scikit-learn
 
 * Add in your Python script:
 
-```import pytesseract  
+``` import pytesseract  
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'  
 ```
 **For Linux:**
@@ -53,7 +53,8 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 sudo apt install tesseract-ocr  
 ```
 **For macOS:**  
-```brew install tesseract ```
+``` brew install tesseract
+ ```
 # ▶️ How to Use
 1. Upload a food label image or use webcam input.
 
