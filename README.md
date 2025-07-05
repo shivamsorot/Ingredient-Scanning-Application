@@ -53,7 +53,8 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 sudo apt install tesseract-ocr  
 ```
 **For macOS:**  
-``` brew install tesseract
+``` 
+brew install tesseract
  ```
 # ▶️ How to Use
 1. Upload a food label image or use webcam input.
