@@ -40,80 +40,69 @@ pip install scikit-learn
 ```
 # 🧠 Install Tesseract OCR Engine
 **For Windows:**
-Download from: [UB Mannheim Tesseract Builds](https://github.com/UB-Mannheim/tesseract/wiki)
+* Download from: [UB Mannheim Tesseract Builds](https://github.com/UB-Mannheim/tesseract/wiki)  
+* Install to default path: `C:\Program Files\Tesseract-OCR\tesseract.exe`
 
-Install to default path: C:\Program Files\Tesseract-OCR\tesseract.exe
+* Add in your Python script:
 
-Add in your Python script:
+```import pytesseract  
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'  
+```
+**For Linux:**
+``` sudo apt update  
+sudo apt install tesseract-ocr  
+```
+**For macOS:**
+```brew install tesseract ```
+# ▶️ How to Use
+1. Upload a food label image or use webcam input.
 
-python
-Copy
-Edit
-import pytesseract
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-For Linux:
-bash
-Copy
-Edit
-sudo apt update
-sudo apt install tesseract-ocr
-For macOS:
-bash
-Copy
-Edit
-brew install tesseract
-▶️ How to Use
-Upload a food label image or use webcam input.
+2. YOLOv8 detects and isolates ingredient regions.
 
-YOLOv8 detects and isolates ingredient regions.
+3. OCR reads the detected text.
 
-OCR reads the detected text.
+4. The app processes the text using TF-IDF vectorization.
 
-The app processes the text using TF-IDF vectorization.
+5. Ingredient names are matched with a local database using cosine similarity.
 
-Ingredient names are matched with a local database using cosine similarity.
+6. The results show the detected ingredients and relevant health notes.
 
-The results show the detected ingredients and relevant health notes.
+# 📈 Example Output
+**Input Image:** Front label of a food packet
+**Extracted Text:**
 
-📈 Example Output
-Input Image: Front label of a food packet
-Extracted Text:
+```"sugar, palm oil, maltodextrin"```
+**Matched Results:**
 
-arduino
-Copy
-Edit
-"sugar, palm oil, maltodextrin"
-Matched Results:
+|Ingredient |	Status|  
+|-----------|-------|
+|Sugar|	🚫 High in calories|
+|Palm Oil|	⚠️ Contains saturated fats|
+|Maltodextrin|	🚫 High glycemic index|
 
-Ingredient	Status
-Sugar	🚫 High in calories
-Palm Oil	⚠️ Contains saturated fats
-Maltodextrin	🚫 High glycemic index
+# ⚖️ Comparison with Other Applications
+|Feature|	This App ✅|	Other Apps ❌|
+|YOLO for object detection|	✅ Yes	|❌ Direct OCR only|
+|TF-IDF + Cosine Similarity|	✅ Yes	|❌ Limited matching|
+|Offline functionality|	✅ Yes	|❌ Often cloud-based|
+|CSV/Excel-based data integration	|✅ Yes	❌ |Not always available|
+|Fully customizable ingredient list|	✅ Yes|	❌ Hardcoded or minimal|
 
-⚖️ Comparison with Other Applications
-Feature	This App ✅	Other Apps ❌
-YOLO for object detection	✅ Yes	❌ Direct OCR only
-TF-IDF + Cosine Similarity	✅ Yes	❌ Limited matching
-Offline functionality	✅ Yes	❌ Often cloud-based
-CSV/Excel-based data integration	✅ Yes	❌ Not always available
-Fully customizable ingredient list	✅ Yes	❌ Hardcoded or minimal
+# 🌱 Future Enhancements
+* 📱 Build mobile app (Android/iOS) for real-time scanning.
 
-🌱 Future Enhancements
-📱 Build mobile app (Android/iOS) for real-time scanning.
+* 🎙️ Add voice feedback for ingredient descriptions (Text-to-Speech).
 
-🎙️ Add voice feedback for ingredient descriptions (Text-to-Speech).
+* ⚠️ User-specific allergy alert system.
 
-⚠️ User-specific allergy alert system.
+* 🔍 Barcode scanning support for larger product databases.
 
-🔍 Barcode scanning support for larger product databases.
+*✅ Health-based scoring system and better alternatives recommendation.
 
-✅ Health-based scoring system and better alternatives recommendation.
-
-🤝 Contributions
-Contributions are welcome!
-
+# 🤝 Contributions
+Contributions are welcome!  
 If you plan to make significant changes, please open an issue first to discuss your ideas. Pull requests are highly appreciated.
 
-📬 Contact
-Project Owner: Shivam Sorot
+# 📬 Contact
+Project Owner: Shivam Sorot  
 📧 Email: shivam29022000@gmail.com
