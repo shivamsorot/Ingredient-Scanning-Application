@@ -83,7 +83,8 @@ brew install tesseract
 |Maltodextrin|	🚫 High glycemic index|
 
 # ⚖️ Comparison with Other Applications
-|Feature|	This App ✅|	Other Apps ❌|
+|Feature|	This App ✅|	Other Apps ❌| 
+|-------|-------------|---------------|
 |YOLO for object detection|	✅ Yes	|❌ Direct OCR only|
 |TF-IDF + Cosine Similarity|	✅ Yes	|❌ Limited matching|
 |Offline functionality|	✅ Yes	|❌ Often cloud-based|
