@@ -70,9 +70,9 @@ brew install tesseract
 6. The results show the detected ingredients and relevant health notes.
 
 # 📈 Example Output
-**Input Image:** Front label of a food packet
-**Extracted Text:** 
-```"sugar, palm oil, maltodextrin"```
+**Input Image:** Front label of a food packet 
+**Extracted Text:**  
+```"sugar, palm oil, maltodextrin"``` 
 **Matched Results:** 
 |Ingredient |	Status|  
 |-----------|-------|
@@ -98,7 +98,7 @@ brew install tesseract
 
 * 🔍 Barcode scanning support for larger product databases.
 
-*✅ Health-based scoring system and better alternatives recommendation.
+* ✅ Health-based scoring system and better alternatives recommendation.
 
 # 🤝 Contributions
 Contributions are welcome!  
